@@ -47,7 +47,7 @@
         .header {
             text-align: center;
             margin-bottom: 60px;
-            margin-top: 60px;
+            position: relative;
         }
 
         .logo {
@@ -99,6 +99,12 @@
             background: #6d5a44;
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(139, 115, 85, 0.4);
+        }
+
+        .catalog-header {
+            position: relative;
+            width: 100%;
+            padding-top: 70px;
         }
 
         .back-button {
@@ -457,12 +463,13 @@
 
     <!-- Página del Catálogo -->
     <div id="catalog" class="page">
-      <button class="back-button" onclick="showPage('home')">← Volver</button>
-
-      <div class="header">
-        <h1 class="logo"><span class="la">La</span> PERLA</h1>
-        <p class="subtitle">Estudio</p>
-        <h2 class="catalog-title">NUESTROS SERVICIOS</h2>
+      <div class="catalog-header">
+        <button class="back-button" onclick="showPage('home')">← Volver</button>
+        <div class="header">
+          <h1 class="logo"><span class="la">La</span> PERLA</h1>
+          <p class="subtitle">Estudio</p>
+          <h2 class="catalog-title">NUESTROS SERVICIOS</h2>
+        </div>
       </div>
 
       <!-- Sección Cejas -->
